@@ -1,5 +1,5 @@
 # SQL-assignment- 
-**Query 1) Total number of blocks**
+**Query 1) What is the total number of blocks**
 ```SQL
 SELECT COUNT(*) AS total_blocks
 FROM bigquery-public-data.crypto_bitcoin.blocks;
@@ -7,7 +7,7 @@ FROM bigquery-public-data.crypto_bitcoin.blocks;
 ![image](https://github.com/Vikas-Ranga/SQL-assignment-/assets/154298566/f7c4aeeb-05fb-485b-89b0-c4bf62c83cf3)
 
  
-**Query 2) average block size**
+**Query 2) list out the average block size**
 ```SQL
 SELECT AVG(size) AS avg_size
 FROM bigquery-public-data.crypto_bitcoin.blocks
@@ -16,7 +16,7 @@ FROM bigquery-public-data.crypto_bitcoin.blocks
 
 
  
-**Query 3)Block with most number of transactions**
+**Query 3)Name the Block which has the most number of transactions**
 ```SQL
 SELECT *
 FROM `bigquery-public-data.crypto_bitcoin.blocks`
@@ -28,7 +28,7 @@ LIMIT 1;
 
  
 
-**Query 4)View blocks with a block size greater than 100000**
+**Query 4)Name the blocks which has the block size greater than 100000**
 ```SQL
 SELECT *
 FROM `bigquery-public-data.crypto_bitcoin.blocks`
